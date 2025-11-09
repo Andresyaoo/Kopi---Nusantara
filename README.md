@@ -1,6 +1,3 @@
-# Kopi---Nusantara
-Landing page Kopi Nusantara
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
