@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andresyaoo.github.io/Kopi---Nusantara/sitemap.xml
