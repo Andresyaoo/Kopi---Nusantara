@@ -4,20 +4,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kopi Nusantara | Technopreneurship</title>
-  <meta name="description" content="Kopi Nusantara adalah website bisnis kopi lokal Indonesia yang memanfaatkan teknologi digital sebagai bagian dari technopreneurship.">
-  <meta name="keywords" content="Kopi Nusantara, bisnis kopi, technopreneurship, UMKM kopi, digital marketing kopi">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Kopi Nusantara adalah website bisnis kopi lokal Indonesia berbasis technopreneurship dan digital marketing.">
+  <meta name="keywords" content="Kopi Nusantara, bisnis kopi, technopreneurship, UMKM kopi, digital marketing">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {font-family: 'Poppins', sans-serif; margin: 0; background: #f5f3ef; color: #333; line-height: 1.8;}
-    header {background: linear-gradient(135deg, #6f4e37, #3e2723); color: white; padding: 50px 20px; text-align: center;}
-    nav {background: #3e2723; padding: 12px; text-align: center;}
-    nav a {color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500;}
-    nav a:hover {text-decoration: underline;}
-    .container {max-width: 1100px; margin: auto; padding: 30px 20px;}
-    article {background: white; padding: 30px; border-radius: 14px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); margin-bottom: 35px;}
-    footer {background: #3e2723; color: white; text-align: center; padding: 20px;}
-    h1, h2, h3 {color: #5d4037;}
-    .badge {display: inline-block; background: #6f4e37; color: white; padding: 6px 14px; border-radius: 20px; font-size: 12px;}
+    :root {
+      --primary: #6f4e37;
+      --secondary: #3e2723;
+      --accent: #d7ccc8;
+      --bg: #f9f6f2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--secondary);
+      padding: 14px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    article {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    article:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    @media(max-width:768px) {
+      header h1 { font-size: 2.2rem; }
+      header { padding: 90px 20px; }
+    }
   </style>
 </head>
 <body>
@@ -35,41 +142,33 @@
 </nav>
 
 <div class="container" id="home">
-  <article>
-    <h2>Selamat Datang di Kopi Nusantara</h2>
-    <p>Kopi Nusantara merupakan website bisnis yang mengangkat potensi kopi lokal Indonesia dengan memanfaatkan teknologi digital sebagai sarana pemasaran dan pengembangan usaha. Website ini dibuat sebagai bentuk penerapan konsep <strong>technopreneurship</strong>, yaitu perpaduan antara teknologi dan kewirausahaan.</p>
-    <p>Website ini dikembangkan dan dikelola secara mandiri oleh pemilik sebagai media promosi, edukasi, serta penguatan branding produk kopi lokal.</p>
-  </article>
+  <div class="grid">
 
-  <article id="artikel">
-    <span class="badge">Artikel</span>
-    <h2>Peran Technopreneurship dalam Bisnis Kopi Lokal</h2>
-    <p><strong>Tanggal Publish:</strong> 20 November 2025</p>
-    <p>Technopreneurship berperan penting dalam membantu pelaku usaha kopi lokal untuk bersaing di era digital. Dengan memanfaatkan website, media sosial, dan analitik digital, bisnis kopi dapat menjangkau pasar yang lebih luas tanpa harus membuka banyak cabang fisik.</p>
-    <p>Pemanfaatan teknologi digital memungkinkan pelaku UMKM kopi untuk melakukan promosi, transaksi, serta komunikasi dengan pelanggan secara lebih efektif dan efisien.</p>
+    <article>
+      <h2>Selamat Datang</h2>
+      <p>Kopi Nusantara adalah platform bisnis kopi lokal Indonesia yang menggabungkan konsep kewirausahaan dan teknologi digital. Website ini dibuat sebagai implementasi <strong>technopreneurship</strong> dalam pengembangan UMKM.</p>
+    </article>
 
-    <h3>Manfaat Teknologi dalam Bisnis Kopi</h3>
-    <ul>
-      <li>Meningkatkan jangkauan pasar melalui internet</li>
-      <li>Memperkuat branding produk kopi lokal</li>
-      <li>Mempermudah promosi dan pemasaran</li>
-      <li>Mendukung pengambilan keputusan berbasis data</li>
-    </ul>
-  </article>
+    <article id="artikel">
+      <span class="badge">Artikel</span>
+      <h2>Technopreneurship dalam Bisnis Kopi</h2>
+      <p><strong>Dipublikasikan:</strong> 20 November 2025</p>
+      <p>Penerapan technopreneurship memungkinkan pelaku usaha kopi untuk memperluas pasar melalui website, SEO, dan media digital sehingga lebih kompetitif di era modern.</p>
+    </article>
 
-  <article id="strategi">
-    <span class="badge">Strategi</span>
-    <h2>Strategi Digital Marketing Kopi Nusantara</h2>
-    <p><strong>Tanggal Publish:</strong> 10 Januari 2026</p>
-    <p>Kopi Nusantara menerapkan strategi digital marketing melalui pembuatan website, optimasi mesin pencari (SEO), serta pemanfaatan media sosial. Website berfungsi sebagai pusat informasi produk dan identitas brand.</p>
-    <p>Selain itu, penggunaan tools analitik seperti Google Search Console membantu pemilik usaha dalam memantau performa website dan perilaku pengunjung.</p>
-  </article>
+    <article id="strategi">
+      <span class="badge">Strategi</span>
+      <h2>Strategi Digital Marketing</h2>
+      <p><strong>Dipublikasikan:</strong> 10 Januari 2026</p>
+      <p>Kopi Nusantara memanfaatkan website sebagai identitas digital utama serta tools analitik untuk memantau performa bisnis dan perilaku pelanggan.</p>
+    </article>
 
-  <article id="tentang">
-    <h2>Tentang Website</h2>
-    <p>Website Kopi Nusantara dibuat oleh <strong>Andres Winata</strong> sebagai bagian dari Ujian Akhir Semester Mata Kuliah <strong>Technopreneurship</strong> Program Studi Informatika Universitas Mercu Buana Yogyakarta.</p>
-    <p>Website ini dikelola secara mandiri dan digunakan sebagai media pembelajaran penerapan teknologi dalam dunia usaha.</p>
-  </article>
+    <article id="tentang">
+      <h2>Tentang Website</h2>
+      <p>Website ini dikembangkan oleh <strong>Andres Winata</strong> sebagai bagian dari Ujian Akhir Semester mata kuliah Technopreneurship Universitas Mercu Buana Yogyakarta.</p>
+    </article>
+
+  </div>
 </div>
 
 <footer>
