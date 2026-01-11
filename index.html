@@ -3,248 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kopi Nusantara - Cita Rasa Asli Indonesia</title>
-  <meta name="description" content="Nikmati kehangatan cita rasa kopi khas Nusantara. Dibuat dari biji kopi pilihan dari seluruh Indonesia.">
+  <title>Kopi Nusantara | Technopreneurship</title>
+  <meta name="description" content="Kopi Nusantara adalah website bisnis kopi lokal Indonesia yang memanfaatkan teknologi digital sebagai bagian dari technopreneurship.">
+  <meta name="keywords" content="Kopi Nusantara, bisnis kopi, technopreneurship, UMKM kopi, digital marketing kopi">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #faf6f1;
-      --text: #333;
-      --accent: #4a2c2a;
-      --light: #fff;
-    }
-
-    body.dark {
-      --bg: #1e1b18;
-      --text: #f5f5f5;
-      --accent: #d2a679;
-      --light: #2b2725;
-    }
-
-    body {
-      font-family: "Poppins", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    header {
-      background: var(--accent);
-      color: var(--light);
-      text-align: center;
-      padding: 2rem 1rem;
-      position: relative;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      font-size: 1rem;
-      margin-top: .5rem;
-    }
-
-    #toggle-theme {
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      background: var(--light);
-      color: var(--accent);
-      border: none;
-      padding: .5rem 1rem;
-      border-radius: 20px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: var(--light);
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: background 0.3s;
-    }
-
-    h2, h3 {
-      color: var(--accent);
-      margin-top: 2rem;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      background: rgba(200,150,100,0.1);
-      margin: .5rem 0;
-      padding: .5rem .8rem;
-      border-radius: 8px;
-    }
-
-    .produk-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1rem 0;
-    }
-
-    .produk-table th, .produk-table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-    }
-
-    .produk-table th {
-      background: var(--accent);
-      color: var(--light);
-    }
-
-    .produk-img {
-      width: 100%;
-      border-radius: 10px;
-      margin: 1rem 0;
-    }
-
-    .cta-section {
-      text-align: center;
-      background: rgba(200,150,100,0.1);
-      padding: 1.5rem;
-      border-radius: 10px;
-      margin-top: 2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--light);
-      padding: .7rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #6d3e37;
-    }
-
-    .testimoni {
-      background: rgba(200,150,100,0.1);
-      padding: .8rem 1rem;
-      margin: .8rem 0;
-      border-left: 4px solid var(--accent);
-      border-radius: 5px;
-    }
-
-    form {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    input[type="email"] {
-      padding:10px;
-      width:60%;
-      border:1px solid #ccc;
-      border-radius:5px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: var(--accent);
-      color: var(--light);
-      margin-top: 3rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.6rem; }
-      input[type="email"] { width: 90%; }
-      .btn { display: block; margin: 0.8rem auto; }
-    }
+    body {font-family: 'Poppins', sans-serif; margin: 0; background: #f5f3ef; color: #333; line-height: 1.8;}
+    header {background: linear-gradient(135deg, #6f4e37, #3e2723); color: white; padding: 50px 20px; text-align: center;}
+    nav {background: #3e2723; padding: 12px; text-align: center;}
+    nav a {color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500;}
+    nav a:hover {text-decoration: underline;}
+    .container {max-width: 1100px; margin: auto; padding: 30px 20px;}
+    article {background: white; padding: 30px; border-radius: 14px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); margin-bottom: 35px;}
+    footer {background: #3e2723; color: white; text-align: center; padding: 20px;}
+    h1, h2, h3 {color: #5d4037;}
+    .badge {display: inline-block; background: #6f4e37; color: white; padding: 6px 14px; border-radius: 20px; font-size: 12px;}
   </style>
 </head>
 <body>
-  <header>
-    <button id="toggle-theme">🌙 Mode Gelap</button>
-    <h1>Kopi Nusantara</h1>
-    <p>Cita Rasa Asli Indonesia dalam Setiap Tegukan ☕</p>
-  </header>
 
-  <main>
-    <p>
-      Kopi Nusantara menghadirkan biji kopi pilihan dari dataran tinggi Toraja, Gayo, dan Kintamani.
-      Kami bekerja langsung dengan petani lokal untuk memastikan setiap cangkir yang Anda nikmati membawa
-      cerita dan keberlanjutan bagi mereka.
-    </p>
+<header>
+  <h1>Kopi Nusantara</h1>
+  <p>Inovasi Bisnis Kopi Lokal Berbasis Technopreneurship</p>
+</header>
 
-    <h3>💡 Mengapa Memilih Kopi Nusantara?</h3>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#artikel">Artikel</a>
+  <a href="#strategi">Strategi Digital</a>
+  <a href="#tentang">Tentang</a>
+</nav>
+
+<div class="container" id="home">
+  <article>
+    <h2>Selamat Datang di Kopi Nusantara</h2>
+    <p>Kopi Nusantara merupakan website bisnis yang mengangkat potensi kopi lokal Indonesia dengan memanfaatkan teknologi digital sebagai sarana pemasaran dan pengembangan usaha. Website ini dibuat sebagai bentuk penerapan konsep <strong>technopreneurship</strong>, yaitu perpaduan antara teknologi dan kewirausahaan.</p>
+    <p>Website ini dikembangkan dan dikelola secara mandiri oleh pemilik sebagai media promosi, edukasi, serta penguatan branding produk kopi lokal.</p>
+  </article>
+
+  <article id="artikel">
+    <span class="badge">Artikel</span>
+    <h2>Peran Technopreneurship dalam Bisnis Kopi Lokal</h2>
+    <p><strong>Tanggal Publish:</strong> 20 November 2025</p>
+    <p>Technopreneurship berperan penting dalam membantu pelaku usaha kopi lokal untuk bersaing di era digital. Dengan memanfaatkan website, media sosial, dan analitik digital, bisnis kopi dapat menjangkau pasar yang lebih luas tanpa harus membuka banyak cabang fisik.</p>
+    <p>Pemanfaatan teknologi digital memungkinkan pelaku UMKM kopi untuk melakukan promosi, transaksi, serta komunikasi dengan pelanggan secara lebih efektif dan efisien.</p>
+
+    <h3>Manfaat Teknologi dalam Bisnis Kopi</h3>
     <ul>
-      <li>✅ 100% biji kopi arabika premium</li>
-      <li>✅ Diproses langsung dari petani lokal tanpa perantara</li>
-      <li>✅ Dikemas segar untuk menjaga kualitas aroma</li>
-      <li>✅ Tersedia varian bubuk dan biji utuh</li>
+      <li>Meningkatkan jangkauan pasar melalui internet</li>
+      <li>Memperkuat branding produk kopi lokal</li>
+      <li>Mempermudah promosi dan pemasaran</li>
+      <li>Mendukung pengambilan keputusan berbasis data</li>
     </ul>
+  </article>
 
-    <h3>📦 Produk Unggulan Kami</h3>
-    <table class="produk-table">
-      <tr>
-        <th>Varian</th>
-        <th>Deskripsi Singkat</th>
-        <th>Harga</th>
-      </tr>
-      <tr>
-        <td>Kopi Gayo</td>
-        <td>Rasa kuat, sedikit asam, dengan aroma cokelat dan rempah</td>
-        <td>Rp 85.000 / 250g</td>
-      </tr>
-      <tr>
-        <td>Kopi Toraja</td>
-        <td>Body penuh, aftertaste lembut, khas tanah Sulawesi</td>
-        <td>Rp 80.000 / 250g</td>
-      </tr>
-      <tr>
-        <td>Kopi Kintamani</td>
-        <td>Keasaman cerah, aroma buah sitrus segar</td>
-        <td>Rp 78.000 / 250g</td>
-      </tr>
-    </table>
+  <article id="strategi">
+    <span class="badge">Strategi</span>
+    <h2>Strategi Digital Marketing Kopi Nusantara</h2>
+    <p><strong>Tanggal Publish:</strong> 10 Januari 2026</p>
+    <p>Kopi Nusantara menerapkan strategi digital marketing melalui pembuatan website, optimasi mesin pencari (SEO), serta pemanfaatan media sosial. Website berfungsi sebagai pusat informasi produk dan identitas brand.</p>
+    <p>Selain itu, penggunaan tools analitik seperti Google Search Console membantu pemilik usaha dalam memantau performa website dan perilaku pengunjung.</p>
+  </article>
 
-    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80" 
-         alt="Secangkir kopi Nusantara siap diseduh" class="produk-img" loading="lazy">
+  <article id="tentang">
+    <h2>Tentang Website</h2>
+    <p>Website Kopi Nusantara dibuat oleh <strong>Andres Winata</strong> sebagai bagian dari Ujian Akhir Semester Mata Kuliah <strong>Technopreneurship</strong> Program Studi Informatika Universitas Mercu Buana Yogyakarta.</p>
+    <p>Website ini dikelola secara mandiri dan digunakan sebagai media pembelajaran penerapan teknologi dalam dunia usaha.</p>
+  </article>
+</div>
 
-    <div class="cta-section">
-      <h3>📲 Pesan Sekarang dan Dukung Petani Lokal!</h3>
-      <p>Nikmati kopi berkualitas dan bantu keberlanjutan ekonomi petani Indonesia.</p>
-      <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Nusantara!%20Saya%20ingin%20pesan%20kopi%20anda." class="btn">Pesan via WhatsApp</a>
-    </div>
+<footer>
+  <p>&copy; 2025 Kopi Nusantara | Technopreneurship Project</p>
+</footer>
 
-    <h3>💬 Testimoni Pelanggan</h3>
-    <div class="testimoni">“Rasanya beda banget! Kopi Toraja dari Kopi Nusantara bikin pagi saya lebih semangat.” — <strong>Dina, Jakarta</strong></div>
-    <div class="testimoni">“Suka banget karena tahu saya juga bantu petani lokal.” — <strong>Rafi, Bandung</strong></div>
-
-    <h3>📧 Langganan Info & Promo</h3>
-    <form>
-      <input type="email" placeholder="Masukkan email Anda" required>
-      <button type="submit" class="btn">Langganan</button>
-    </form>
-  </main>
-
-  <footer>
-    <p>© 2025 Kopi Nusantara | Dibuat dengan ❤️ oleh Andresyaoo</p>
-  </footer>
-
-  <script>
-    const toggle = document.getElementById("toggle-theme");
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-      toggle.textContent = document.body.classList.contains("dark") ? "☀️ Mode Terang" : "🌙 Mode Gelap";
-    });
-  </script>
 </body>
 </html>
